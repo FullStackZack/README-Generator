@@ -9,6 +9,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        name: "email",
+        message: "What is your email address?"
+    },
+    {
+        type: "input",
         name: "title",
         message: "What is the title of your project?"
     },
@@ -47,4 +52,15 @@ inquirer.prompt([
             "Unlicense"
         ]
     }
-])
+]).then(function(data) {
+
+    fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
+
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("Your README has been generated!")
+
+    });
+});
