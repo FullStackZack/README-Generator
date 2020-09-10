@@ -21,7 +21,7 @@ The README Generator is a command-line application that dynamically generates a 
 Here's a video on how to use: https://youtu.be/iRrGF2hMQxY
 
 Screenshot of Generated README:
-<img src="readme-generator.png" alt="Screenshot of README Generator">
+<img src="Desktop/readme-generator.png" alt="Screenshot of README Generator">
 
 
 ## Contributing
