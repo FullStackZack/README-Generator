@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var fs = require('fs');
 
+// series of questions from command line
 inquirer.prompt([
     {
         type: "input",
@@ -59,6 +60,7 @@ inquirer.prompt([
     }
 ]).then(function(data) {
 
+// generates markdown for readme from user's input
 const generateReadme =`
 # ${data.title}
 
@@ -97,7 +99,7 @@ Email: [${data.email}]
 
 `;
 
-
+    // generates a readme file
     fs.writeFile("README.md", generateReadme, function(err) {
 
 
