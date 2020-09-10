@@ -18,7 +18,7 @@ The README Generator is a command-line application that dynamically generates a 
 * Install 'fs'
 
 ## Usage
-Link to video: 
+Here's a video on how to use: https://youtu.be/iRrGF2hMQxY
 
 ## Contributing
 None
