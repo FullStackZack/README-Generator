@@ -13,11 +13,12 @@ The README Generator is a command-line application that dynamically generates a 
 * [Questions](#questions)
 
 ## Installation
+* Clone this repository (https://github.com/FullStackZack/README-Generator.git)
 * Install 'inquirer'
 * Install 'fs'
 
 ## Usage
-
+Link to video: 
 
 ## Contributing
 None
