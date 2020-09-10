@@ -54,8 +54,22 @@ inquirer.prompt([
     }
 ]).then(function(data) {
 
-    function generateReadme(data) {
-        `
+
+    fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
+
+        generateReadme();
+
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("Your README has been generated!")
+        
+    });
+
+}).then(function generateReadme(data) {
+
+    `
 
        # ${data.title}
 
@@ -92,21 +106,6 @@ inquirer.prompt([
 
        Email: [${data.email}]
 
-       `;
-
-       };
-
-
-    fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
-
-        generateReadme();
-
-        if (err) {
-            return console.log(err);
-        }
-
-        console.log("Your README has been generated!")
-        
-    });
+    `;
 
 });
