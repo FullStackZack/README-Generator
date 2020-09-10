@@ -20,6 +20,10 @@ The README Generator is a command-line application that dynamically generates a 
 ## Usage
 Here's a video on how to use: https://youtu.be/iRrGF2hMQxY
 
+Screenshot of Generated README:
+<img src="readme-generator.png" alt="Screenshot of README Generator">
+
+
 ## Contributing
 None
 
