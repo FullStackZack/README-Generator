@@ -51,23 +51,15 @@ inquirer.prompt([
             "GNU LGPLv3",
             "Unlicense"
         ]
+    },
+    {
+        type: "input",
+        name: "test",
+        message: "How do you test your application?"
     }
 ]).then(function(data) {
 
-
-    fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
-
-        generateReadme();
-
-        if (err) {
-            return console.log(err);
-        }
-
-        console.log("Your README has been generated!")
-        
-    });
-
-}).then(function generateReadme(data) {
+    const generateReadme =
 
     `
 
@@ -107,5 +99,18 @@ inquirer.prompt([
        Email: [${data.email}]
 
     `;
+
+
+    fs.writeFile("README.md", generateReadme, function(err) {
+
+
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("Your README has been generated!")
+
+        
+    });
 
 });
