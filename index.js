@@ -54,13 +54,59 @@ inquirer.prompt([
     }
 ]).then(function(data) {
 
+    function generateReadme(data) {
+        `
+
+       # ${data.title}
+
+       ## Description
+       ${data.description}
+
+       ## Table of Contents
+       [Installation](#installation)
+       [Usage](#usage)
+       [Contributing](#contributing)
+       [License](#license)
+       [Test](#test)
+       [Questions](#questions)
+
+       ## Installation
+       ${data.installation}
+
+       ## Usage
+       ${data.usage}
+
+       ## Contributing
+       ${data.contributing}
+
+       ## License
+       ${data.license}
+
+       ## Tests
+       ${data.test}
+
+       ## Questions
+       Contact:
+
+       Github: [${data.username}](https://github.com/${data.username})
+
+       Email: [${data.email}]
+
+       `;
+
+       };
+
+
     fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
+
+        generateReadme();
 
         if (err) {
             return console.log(err);
         }
 
         console.log("Your README has been generated!")
-
+        
     });
+
 });
