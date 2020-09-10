@@ -1,8 +1,8 @@
 
- # README Generator
+# README Generator
 
 ## Description
-Here is a brief description
+The README Generator is a command-line application that dynamically generates a professional README.md from a user's input.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,19 +13,20 @@ Here is a brief description
 * [Questions](#questions)
 
 ## Installation
-Here are some instructions on how to install & use
+* Install 'inquirer'
+* Install 'fs'
 
 ## Usage
-       
+
 
 ## Contributing
 None
 
 ## License
-MIT
+Unlicense
 
 ## Tests
-None
+No tests at the moment
 
 ## Questions
 Contact:
@@ -34,4 +35,3 @@ Github: [FullStackZack](https://github.com/FullStackZack)
 
 Email: [zhwhite18@yahoo.com]
 
-    

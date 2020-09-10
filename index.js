@@ -59,45 +59,43 @@ inquirer.prompt([
     }
 ]).then(function(data) {
 
-    const generateReadme =
+const generateReadme =`
+# ${data.title}
 
-    `
-       # ${data.title}
+## Description
+${data.description}
 
-       ## Description
-       ${data.description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Test](#test)
+* [Questions](#questions)
 
-       ## Table of Contents
-       * [Installation](#installation)
-       * [Usage](#usage)
-       * [Contributing](#contributing)
-       * [License](#license)
-       * [Test](#test)
-       * [Questions](#questions)
+## Installation
+${data.installation}
 
-       ## Installation
-       ${data.installation}
+## Usage
+${data.usage}
 
-       ## Usage
-       ${data.usage}
+## Contributing
+${data.contributing}
 
-       ## Contributing
-       ${data.contributing}
+## License
+${data.license}
 
-       ## License
-       ${data.license}
+## Tests
+${data.test}
 
-       ## Tests
-       ${data.test}
+## Questions
+Contact:
 
-       ## Questions
-       Contact:
+Github: [${data.username}](https://github.com/${data.username})
 
-       Github: [${data.username}](https://github.com/${data.username})
+Email: [${data.email}]
 
-       Email: [${data.email}]
-
-    `;
+`;
 
 
     fs.writeFile("README.md", generateReadme, function(err) {
