@@ -62,21 +62,20 @@ inquirer.prompt([
     const generateReadme =
 
     `
-
        # ${data.title}
 
        ## Description
        ${data.description}
 
        ## Table of Contents
-       [Installation](#installation)
-       [Usage](#usage)
-       [Contributing](#contributing)
-       [License](#license)
-       [Test](#test)
-       [Questions](#questions)
+       * [Installation](#installation)
+       * [Usage](#usage)
+       * [Contributing](#contributing)
+       * [License](#license)
+       * [Test](#test)
+       * [Questions](#questions)
 
-       ##Installation
+       ## Installation
        ${data.installation}
 
        ## Usage
