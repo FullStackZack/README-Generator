@@ -76,7 +76,7 @@ inquirer.prompt([
        [Test](#test)
        [Questions](#questions)
 
-       ## Installation
+       ##Installation
        ${data.installation}
 
        ## Usage
